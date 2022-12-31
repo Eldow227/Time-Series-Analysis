@@ -24,6 +24,6 @@ This one is one of datacamp contest subject. I took part in it, unfortunetly I d
 
 COMMENT:
 
-In my projects I often used the same functions and code as in previous. In this case I think about auto_reg function, which changes the estimator and code cell when I replace outliers. 
+In my projects I often use the same functions and code. In this case I think about auto_reg function, which changes the estimator and z_score function which replace outliers. 
 
 So please don't be surprised if some columns seems to look excatly the same as in previous project.
