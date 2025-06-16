@@ -14,7 +14,7 @@ Started with a simple ARMA model.
 
 Switched to auto_arima to find the best parameters automatically.
 
-Noticed that Weighted Least Squares (WLS) gives better results, so I built a helper function (auto_reg) to plug it in.
+Noticed that Weighted Least Squares (WLS) gives better results, so I used a helper function (auto_reg) to plug it in.
 
 How to run it: Just open the notebook in Google Colab. If the data doesn’t load automatically, upload net_value.txt manually—it’s included in the repo.
 
