@@ -1,29 +1,24 @@
-In this repository You can find projects of time series analysis.
+Time Series Projects (Bachelor’s Edition)
+I’ve worked on two time series forecasting projects around Microsoft’s financials as part of my Bachelor’s degree. Both use real-world data and Python notebooks in Google Colab—so you can easily run, tweak, and experiment with the code yourself.
 
-## Net Value of Microsoft
+1. Net Value Forecast for Microsoft
+What I did:
 
-In this project I managed to predict future value of MIcrosoft net. The data I was working on you can find in txt file called net_value. I uploaded this file because I don't know when you visited this repository, and the data could have changed since that time.
+Objective: Predict Microsoft’s future net value.
 
-In this project I try basic ARMA model, but I use AUTO ARIMA to find optimum. As it turnes out, WSL estiamtor is much better for this problem, so I created a function called auto_reg which changes the estimator to WLS.
+Data: Everything’s in a net_value.txt file—that way, even if the original data changes, you’ll still get the same numbers I used.
 
-I wrote Python code in google colaboratory (jupyter notebook) so you can run it by yourself any time you want.
-In case you had some problems with loading data in jupyter you can also upload it by yourself from your computer.
+How:
 
-## EBITDA of Microsoft
+Started with a simple ARMA model.
 
-Here I tried to predict EBITDA of MIcrosoft. 
-Code in this one is very similar to Net Value project.
+Switched to auto_arima to find the best parameters automatically.
 
+Noticed that Weighted Least Squares (WLS) gives better results, so I built a helper function (auto_reg) to plug it in.
 
+How to run it: Just open the notebook in Google Colab. If the data doesn’t load automatically, upload net_value.txt manually—it’s included in the repo.
 
-## Is Melbourne good for selling solar energy ? - Time Series analysis using ARIMA model
-
-This one is one of datacamp contest subject. I took part in it, unfortunetly I didn't finish. I decided for it because I think subjects like this are very interesting, I managed to create a model, but I am not sure about it's accuracy.
-
+2. EBITDA Forecast for Microsoft
+This one’s basically the same setup, but with a different target: Microsoft’s EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization). I applied the same ARMA/ARIMA process and the WLS-adjusted auto_reg function for consistency and improved accuracy.
 
 
-COMMENT:
-
-In my projects I often use the same functions and code. In this case I think about auto_reg function, which changes the estimator and z_score function which replace outliers. 
-
-So please don't be surprised if some columns seems to look excatly the same as in previous project.
